@@ -1,2 +1,2 @@
 # ThreadTaskInUnity
-Some code for practical thread and task in Unity.
+Some code for practicing thread and task in Unity.
