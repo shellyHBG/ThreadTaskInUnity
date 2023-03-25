@@ -3,7 +3,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace ShellyQQQ
+namespace ThreadTask
 {
     public class MyDebugerThread : MonoBehaviour
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace ShellyQQQ
+namespace ThreadTask
 {
     public class MyDebuggerTask : MonoBehaviour
     {
