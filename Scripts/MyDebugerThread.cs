@@ -7,7 +7,7 @@ namespace ThreadTask
 {
     public class MyDebugerThread : MonoBehaviour
     {
-        // scene
+        // main scene
         public Button btn1;
         public Button btn2;
         public Button btn3;
@@ -43,6 +43,11 @@ namespace ThreadTask
             UnityDebugLog("=====Start PrintLog Thread=====");
         }
 
+        void Update()
+        {
+            ThreadState state = _thread.ThreadState;
+        }
+
         void OnDestroy()
         {
             CloseThread();
@@ -60,7 +65,7 @@ namespace ThreadTask
                 if (_queueLog.Count <= 0)
                     continue;
 
-                lock(_logLock)
+                lock (_logLock)
                 {
                     UnityDebugLog(_queueLog.Dequeue());
                 }
